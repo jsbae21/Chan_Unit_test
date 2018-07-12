@@ -33,7 +33,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 
-public class review { 
+public class review_001 { 
   private WebDriver driver;
   private StringBuffer verificationErrors = new StringBuffer();
  
