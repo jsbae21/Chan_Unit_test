@@ -14,16 +14,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Date : 2018-07-12
  * Subject : review
  * Name : TC_1
- * Scenario : 1.무나물 구매이력 O
- *            2.search > 무나물
- *            3.후기작성
- *            4.validation 후 등록
- * Assertion :  Login success
-				Search success
-				Open a review page success
-				별점 success
-				평가 success
-				후기 수정 success
+ * Scenario : 1.로그인
+ * 			  2. 무나물 검색
+ * 			  3. 상품상세 진입 > 내가 작성 한 후기 수정페이지 진입
+ * 			  4. 별점 / 평가 / 후기내용 후정
+ * result :   Login success
+			  Search success
+			  Open a review page success
+			    별점 success
+			    평가 success
+			    후기 수정 success
  *
  */
 
@@ -63,7 +63,7 @@ public class review_002 {
 		Thread.sleep(2000);
 		System.out.println("Open a review page success");
 		
-		// 별점 Check
+		// 별점 수정
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[1]/div/span[9]")).click();
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[1]/div/span[7]")).click();	
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[1]/div/span[5]")).click();
@@ -72,7 +72,7 @@ public class review_002 {
 		System.out.println("별점 success");
 		Thread.sleep(1500);
 		
-		//평가 Check
+		//평가 수정
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[2]/dl/div[1]/dd[3]/label")).click(); //괜찮아요
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[2]/dl/div[1]/dd[2]/label")).click(); //괜찮아요
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[2]/dl/div[1]/dd[1]/label")).click(); //별로에요
@@ -89,9 +89,8 @@ public class review_002 {
 		driver.findElement(By.xpath("//*[@id=\"submitBtn\"]")).click();
 		System.out.println("후기 수정 success");
 		
-		
 		//내용 Text Check
-		/*        --------자동화로 후기 수정시 textarea 삭제해도 '저장하기' 버튼이 비활성화 되지 않아 아래 경로 수행 불가능 -----------------
+		/*  ----자동화로 후기 수정시 textarea 삭제해도 '저장하기' 버튼이 비활성화 되지 않아 아래 경로 수행 불가능 -----------------
 		driver.findElement(By.xpath("//*[@id=\"foobar\"]/div/div/div[3]/div/div/textarea")).clear();
 		Thread.sleep(1500);	
 		driver.findElement(By.xpath("//*[@id=\"submitBtn\"]")).click();
