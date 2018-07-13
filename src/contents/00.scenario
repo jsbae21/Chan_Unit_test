@@ -1,5 +1,5 @@
-contents > review 시나리오
-1. 후기작성 (validation)
-2. 후기수정 (후기내용은 자동화 제외)
-3. 후기수정 > 사직삭제 case
-4. 후기 삭제
+review scenario
+001. 후기작성 (validation)
+002. 후기수정 (후기내용은 자동화 제외)
+003. 후기수정 > 사직삭제 case
+004. 후기 삭제
