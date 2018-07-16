@@ -1,4 +1,4 @@
-package sample;
+package main;
 
 
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,17 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class main { 
+/**
+ * 
+ * Date : 2018-07-16
+ * Subject : main
+ * Name : TC_1
+ * Scenario : 1.main 화면 각 버튼 동작 확인
+ * Assertion :  버튼 동작 확인
+ *
+ */
+
+public class main_button { 
   private WebDriver driver;
   private StringBuffer verificationErrors = new StringBuffer();
  
