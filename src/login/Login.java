@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Date : 2018-06-25
  * Subject : 로그인 
  * Name : TC_1
- * Scenario : validation
+ * Scenario : login validation
  * Assertion : 로그인 
  *
  */
