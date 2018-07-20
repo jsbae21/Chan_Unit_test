@@ -42,7 +42,6 @@ public class review_003 {
 	public void p_001() throws Exception {
 		driver.get("https://alpha-www.baeminfresh.com/");
 		driver.findElement(By.xpath("//*[@id=\"lnb\"]/ul/li[1]/a")).click();
-		
 		driver.findElement(By.xpath("//*[@id=\"member_id\"]")).sendKeys("baelong7@naver.com"); //아이디 입력 
 		driver.findElement(By.xpath("//*[@id=\"pwd\"]")).sendKeys("q1w2e3r4t5"); //패스워드 입력  
 		driver.findElement(By.xpath("//*[@id=\"login\"]/div[1]/form/fieldset/button")).click(); //로그인 버튼 클릭 
