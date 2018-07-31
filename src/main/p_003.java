@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 
-public class main_button { 
+public class p_003 { 
   private WebDriver driver;
   private StringBuffer verificationErrors = new StringBuffer();
  
