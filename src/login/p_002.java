@@ -18,7 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *            1. 상단 > 회원가입 Tap
  *            2. 상단 > 로그인 > 회원가입 Tap
  * Result : 1. 회원가입 페이지 이동1 Pass
-			2. 회원가입 페이지 이동2 Pass 
+	    2. 회원가입 페이지 이동2 Pass 
  *
  */
 
